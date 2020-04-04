@@ -1,0 +1,36 @@
+<form class="form-horizontal" [formGroup]="form">
+  <div class="loginHome">
+  <div class="form-group" [ngClass]="displayFieldCss('name')">
+    <div class="col-sm-12">
+      <label for="name" class="control-label required">Employee ID</label>
+      <input type="text" id="name" class="form-control" formControlName="name">
+      <app-field-error-display [displayError]="isFieldValid('name')" errorMsg="Please enter your EMP.ID">
+      </app-field-error-display>
+    </div>
+  </div>
+
+  <div class="form-group" [ngClass]="displayFieldCss('email')">
+    <div class="col-sm-12">
+      <label for="email" class="control-label required">Email</label>
+      <input type="text" id="email" class="form-control" formControlName="email">
+      <app-field-error-display [displayError]="isFieldValid('email')" errorMsg="Please check your email">
+      </app-field-error-display>
+    </div>
+  </div>
+
+<div class="form-group" [ngClass]="displayFieldCss('password')">
+    <div class="col-sm-12">
+      <label for="password" class="control-label required">Password</label>
+      <input type="password" id="password" class="form-control" formControlName="password">
+      <app-field-error-display [displayError]="isFieldValid('email')" errorMsg="Please check your Password">
+      </app-field-error-display>
+    </div>
+    <br>
+    <button class="btn btn-primary" id = "redirection" (click)="onSubmit()" >Submit</button>
+&nbsp;&nbsp;&nbsp;&nbsp;  <button class="btn btn-secondary" (click)="reset()">Reset</button>
+  </div>
+  
+
+  </div>
+
+</form>

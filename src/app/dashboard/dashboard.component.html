@@ -1,0 +1,171 @@
+<section class='statis text-center'>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="box bg-primary">
+					<i class="fa fa-eye"></i>
+					<h3>5,154</h3>
+					<p class="lead">Page views</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="box bg-danger">
+					<i class="fa fa-user-o"></i>
+					<h3>245</h3>
+					<p class="lead">User registered</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="box  bg-warning">
+					<i class="fa fa-shopping-cart"></i>
+					<h3>5,154</h3>
+					<p class="lead">Product sales</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="box  bg-success">
+					<i class="fa fa-handshake-o"></i>
+					<h3>5,154</h3>
+					<p class="lead">Transactions</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="charts">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="chart-container">
+					<h3>Pie-Chart of Regestrations </h3>
+
+					<canvas baseChart [data]="polarAreaChartData" [labels]="polarAreaChartLabels"
+						[legend]="polarAreaLegend" [chartType]="polarAreaChartType">
+					</canvas>
+				</div>
+			</div>
+
+
+			<div class="col-md-6">
+				<div class="chart-container">
+					<h3> Total incomes of users </h3>
+					<canvas baseChart [datasets]="bubbleChartData" [options]="bubbleChartOptions"
+						[colors]="bubbleChartColors" [legend]="bubbleChartLegend" [chartType]="bubbleChartType">
+					</canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="statistics">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="box">
+					<i class="fa fa-envelope fa-fw bg-primary"></i>
+					<div class="info">
+						<h3>1,245</h3> <span></span>
+						<p>Reviews retrived in form of Emails</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="box">
+					<i class="fa fa-file fa-fw danger"></i>
+					<div class="info">
+						<h3>34</h3> <span></span>
+						<p>Undertaken projects</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="box">
+					<i class="fa fa-users fa-fw success"></i>
+					<div class="info">
+						<h3>5,245</h3> <span></span>
+						<p>Serving users through the app</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="charts">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="chart-container">
+					<h3>Pie-Chart of Regestrations </h3>
+
+					<canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+						[plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
+					</canvas>
+				</div>
+
+			</div>
+			<div class="col-md-4 p-4">
+				<div class="card">
+					<article class="card-group-item">
+						<header class="card-header">
+							<h6 class="title">Range input </h6>
+						</header>
+						<div class="filter-content">
+							<div class="card-body">
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label>Min</label>
+										<input type="number" class="form-control" id="inputEmail4" placeholder="$0">
+			</div>
+										<div class="form-group col-md-6 text-right">
+											<label>Max</label>
+											<input type="number" class="form-control" placeholder="$1,0000">
+			</div>
+										</div>
+									</div> <!-- card-body.// -->
+								</div>
+					</article> <!-- card-group-item.// -->
+					<article class="card-group-item">
+						<header class="card-header">
+							<h6 class="title">Selection </h6>
+						</header>
+						<div class="filter-content">
+							<div class="card-body">
+								<div class="custom-control custom-checkbox">
+									<span class="float-right badge badge-light round">52</span>
+									<input type="checkbox" class="custom-control-input" id="Check1">
+									<label class="custom-control-label" for="Check1">Sales</label>
+								</div> <!-- form-check.// -->
+
+								<div class="custom-control custom-checkbox">
+									<span class="float-right badge badge-light round">132</span>
+									<input type="checkbox" class="custom-control-input" id="Check2">
+									<label class="custom-control-label" for="Check2">Inputs</label>
+								</div> <!-- form-check.// -->
+
+								<div class="custom-control custom-checkbox">
+									<span class="float-right badge badge-light round">17</span>
+									<input type="checkbox" class="custom-control-input" id="Check3">
+									<label class="custom-control-label" for="Check3">overseas</label>
+								</div> <!-- form-check.// -->
+
+								<div class="custom-control custom-checkbox">
+									<span class="float-right badge badge-light round">7</span>
+									<input type="checkbox" class="custom-control-input" id="Check4">
+									<label class="custom-control-label" for="Check4">Other communities</label>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<app-footer></app-footer>

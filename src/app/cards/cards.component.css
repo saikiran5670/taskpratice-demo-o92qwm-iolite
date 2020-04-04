@@ -1,0 +1,10 @@
+
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+    *zoom: 1;
+    zoom: 1;
+    width: 1000px;
+    margin-left: 247px;
+    margin-top: 81px;
+}
